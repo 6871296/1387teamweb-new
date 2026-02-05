@@ -36,6 +36,9 @@ main{
 	background-color:#0ff1;
 	border-radius:1cm;
 }
+.main-section{
+	background-color:#0ff2;
+}
 h1{
 	color:cyan;
 	text-align: center;

@@ -2,7 +2,7 @@ const site='https://1387teamweb.github.io/nextweb'
 const cdnSite='https://1387-cdn.pythonanywhere.com'
 
 let username=''
-if(!window.localStorage.getItem('loginId')||window.localStorage.getItem('loginId')==null||window.localStorage.getItem('loginId')=='null')
+if(!window.localStorage.getItem('loginId')||window.localStorage.getItem('loginId')===null||window.localStorage.getItem('loginId')==='null')
 	username='游客'
 else{
 	let xhr=new XMLHttpRequest()
@@ -26,14 +26,14 @@ if(currentUser.home!==''){
 	document.getElementById('user-goto-home-icon').src=cdnSite+'/user-social-links/user-has-home.ico'
 }
 if(currentUser.luogu!==''){
-	document.getElementById('user-goto-luogu').href=currentUser.luogu
+	document.getElementById('user-goto-luogu').href='https://www.luogu.com.cn/user/'+currentUser.luogu
 	document.getElementById('user-goto-luogu-icon').src=cdnSite+'/user-social-links/user-has-luogu.ico'
 }
 if(currentUser._40code!==''){
-	document.getElementById('user-goto-40code').href=currentUser._40code
+	document.getElementById('user-goto-40code').href='https://www.40code.com/#page=user&id='+currentUser._40code
 	document.getElementById('user-goto-40code-icon').src=cdnSite+'/user-social-links/user-has-40code.ico'
 }
 if(currentUser.github!==''){
-	document.getElementById('user-goto-github').href=currentUser.github
+	document.getElementById('user-goto-github').href='https://github.com/'+currentUser.github
 	document.getElementById('user-goto-gihub-icon').src=cdnSite+'/user-social-links/user-has-github.ico'
 }
