@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+	<meta charset="UTF-8">
+	<title>1387网（新版）</title>
+	<link rel="stylesheet" href="https://1387-cdn.pythonanywhere.com/style.css">
+	<script src="https://1387-cdn.pythonanywhere.com/main.js"></script>
+	<style>
+		a {
+			text-decoration: none;
+		}
+	
+		.dance {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 6rem;
+			font-weight: bold;
+			white-space: nowrap;
+			cursor: pointer;
+			margin-top: 120px;
+		}
+	
+		.word {
+			/* alternate 轮流反向播放 A--B--A--B... 必须要加 */
+			animation: dance 0.72s cubic-bezier(0.05, 0, 0.2, 1) infinite alternate;
+			display: inline-block;
+			transform: translate3d(0, 0, 0);
+			font-size: 3rem;
+			text-decoration: underline;
+			color: rgb(250, 5, 8);
+			margin-right: 1px;
+		}
+	
+		.word:nth-child(1) {
+			animation-delay: 0s;
+		}
+	
+		.word:nth-child(2) {
+			animation-delay: 0.0333333333s;
+		}
+	
+		.word:nth-child(3) {
+			animation-delay: 0.1333333333s;
+		}
+	
+		.word:nth-child(4) {
+			animation-delay: 0.2333333333s;
+		}
+	
+		.word:nth-child(5) {
+			animation-delay: 0.3333333333s;
+		}
+	
+		.word:nth-child(6) {
+			animation-delay: 0.4333333333s;
+		}
+	
+		.word:nth-child(7) {
+			animation-delay: 0.5333333333s;
+		}
+	
+		.word:nth-child(8) {
+			animation-delay: 0.6333333333s;
+		}
+	
+		.word:nth-child(9) {
+			animation-delay: 0.7333333333s;
+		}
+	
+		.word:nth-child(10) {
+			animation-delay: 0.8333333333s;
+		}
+	
+		.word:nth-child(11) {
+			animation-delay: 0.9333333333s;
+		}
+	
+		.word:nth-child(12) {
+			animation-delay: 1.0333333333s;
+		}
+	
+		.word:nth-child(13) {
+			animation-delay: 1.1333333333s;
+		}
+	
+		.word:nth-child(14) {
+			animation-delay: 1.2333333333s;
+		}
+	
+		.word:nth-child(15) {
+			animation-delay: 1.3333333333s;
+		}
+	
+		.word:nth-child(16) {
+			animation-delay: 1.4333333333s;
+		}
+	
+		.word:nth-child(17) {
+			animation-delay: 1.5333333333s;
+		}
+	
+		.word:nth-child(18) {
+			animation-delay: 1.6333333333s;
+		}
+	
+		@keyframes dance {
+			0% {
+				transform: translate3d(0, 0, 0);
+			}
+	
+			100% {
+				transform: translate3d(0, -0.54em, 0);
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<section id="nav"><!--导航栏-->
+			<a href="/" class="navbox">
+				<img style="border-radius:50%" src="https://1387-cdn.pythonanywhere.com/favicon.ico">
+				<strong class="navitem">首页</strong>
+			</a>
+			<a href="/projects" class="navbox">
+				<span class="navitem">作品</span>
+			</a>
+			<a href="/users" class="navbox">
+				<span class="navitem">用户</span>
+			</a>
+			<a href="/about" class="navbox">
+				<span class="navitem">关于1387</span>
+			</a>
+			<a href="/joinus" class="navbox">
+				<span class="navitem">加入我们</span>
+			</a>
+		</section>
+		<section id="user-settings">
+			<a href="/notifications" class="navbox"><img
+					id="user-notifications"></a><!--去往通知中心 这个需要一点点后端，可以用PythonAnywhere-->
+			<a href="/user" style="border-radius:50%" class="navbox"><img class="user-ico"
+					style="border-radius:50%"></a><!--用户头像 去往用户中心-->
+		</section>
+		<section id="user-menu" style="display:none">
+			<strong id="username"></strong>
+			<button id="user-goto-home"><img id="user-goto-home-icon"
+					src="https://1387-cdn.pythonanywhere.com/user-social-links/user-no-home.ico"></button><!--用户自己的个人主页-->
+			<button id="user-goto-luogu"><img id="user-goto-luogu-icon"
+					src="https://1387-cdn.pythonanywhere.com/user-social-links/user-no-luogu.ico"></button>
+			<button id="user-goto-40code"><img id="user-goto-40code-icon"
+					src="https://1387-cdn.pythonanywhere.com/user-social-links/user-no-40code.ico"></button>
+			<button id="user-goto-github"><img id="user-goto-github-icon"
+					src="https://1387-cdn.pythonanywhere.com/user-social-links/user-no-github.ico"></button>
+
+			<a href="/login" class="btnbox">
+				<span class="user-menu-" </a>
+					<a href="/user/projects" class="user-menu-box">
+						<span class="user-menu-item">我的作品</span>
+					</a>
+					<a href="/user/settings" class="user-menu-box">
+						<span class="user-menu-item">个人设置</span>
+					</a><!--你们还能想到什么吗？-->
+		</section>
+	</header>
+	<main>
+		<h1>这里是 1387网</h1>
+		<!--主内容-->
+		<body background="https://cdn.luogu.com.cn/upload/image_hosting/650rx3ui.png">
+		
+			<p><span class="word">Y</span>
+				<span class="word">O</span>
+				<span class="word">U</span>
+				<span class="word">N</span>
+				<span class="word">G</span>
+				<span class="word">（1</span><span class="word">3</span><span class="word">8</span><span class="word">7）</span>
+				<span class="word">团</span>
+				<span class="word">队</span>
+				<span class="word">的</span>
+				<span class="word">招</span>
+				<span class="word">人</span>
+				<span class="word">公</span>
+				<span class="word">告</span>
+			</p>
+			<a href="https://www.luogu.com.cn/team/74385"><button>
+					<font color="#8558ff">1387 洛谷1队——加入我们</font>
+				</button></a>
+			<a href="https://www.luogu.com.cn/team/76357"><button>
+					<font color="#8558ee">1387 洛谷2队——加入我们</font>
+				</button></a>
+			<a href="https://www.40code.com/#page=studio&id=535"><button>
+					<font color="#8558dd">1387 40code队——加入我们</font>
+				</button></a>
+			<a href="https://www.ccw.site/topic/1387%E7%A4%BECCW%E5%88%86%E7%A4%BE"><button>
+					<font color="#8558cc">1387 CCW队——加入我们</font>
+				</button></a>
+			<h3>我们欢迎大家加入！</h3>
+			<h6>制作者：Lg2307，YXY317Coder</h6>
+	</main>
+	<footer>
+		<section class="footer-section">
+			<h3>友情链接</h3>
+			<a href="https://www.40code.com/#" class="yolink"><img src="https://www.40code.com/favicon.ico" width="32px"
+					height="32px">40code</a>
+			<a href="https://www.luogu.com.cn" class="yolink"><img src="https://luogu.com.cn/favicon.ico" width="32px"
+					height="32px">洛谷</a>
+			<a href="https://github/com" class="yolink"><img src="https://github.githubassets.com/favicons/favicon.svg"
+					width="32px" height="32px">GitHub</a>
+			<!--在此添加友链-->
+			<a href="/add-yolink" class="yolink">想要添加友链？点我</a>
+		</section>
+		<section class="footer-section">
+			<h3>1387相关站点</h3>
+			<a href="https://1387team.github.io/" class="yolink">1387旧版主站</a>
+			<a href="https://name317.github.io/1387teamweb" class="yolink">1387旧版站（室长镜像站）</a>
+			<a href="https://6871296.github.io/1387teamweb" class="yolink">1387旧版站（6871296镜像站）</a>
+			<a href="https://yxy317coder.github.io/1387teamweb" class="yolink">1387旧版站（室长小号镜像站）</a>
+			<a href="https://1387tw.wuaze.com" class="yolink">1387的废弃网址</a>
+			<a href="https://1387.com" class="yolink">1387的废弃网址（2）</a>
+			<a href="https://40code.com/#page=studio&id=535" class="yolink">1387 40code队</a>
+			<a href="https://www.luogu.com.cn/team/74385" class="yolink">1387 洛谷1队</a>
+			<a href="https://www.luogu.com.cn/team/76357" class="yolink">1387 洛谷2队</a>
+			<a href="https://www.ccw.site/topic/1387%E7%A4%BECCW%E5%88%86%E7%A4%BE" class="yolink">1387 CCW队</a>
+		</section>
+		<section class="footer-section">
+			<a href="#top" class="yolink">返回顶部</a>
+			<strong>©2024-<span id="year"></span> <img
+					src="https://1387-cdn.pythonanywhere.com/favicon.ico">1387Team™️</strong>
+		</section>
+	</footer>
+	<script>
+		document.write("最后更新日期：" + document.lastModified + ""
+			(function () {
+				var a_idx = 0; //防伪标识——制作者：Lg2307，YXY317Coder
+				window.onclick = function (event) {
+					var a = new Array("❤嗨喽！❤", "❤我们是 1387！❤", "❤有兴趣加入我们吗？❤");
+
+					var heart = document.createElement("b"); //创建b元素
+					heart.onselectstart = new Function('event.returnValue=false'); //防止拖动
+
+					document.body.appendChild(heart).innerHTML = a[a_idx]; //将b元素添加到页面上
+					a_idx = (a_idx + 1) % a.length;
+					heart.style.cssText = "position: fixed;left:-100%;"; //给p元素设置样式
+
+					var f = 16, // 字体大小
+						x = event.clientX - f / 2, // 横坐标
+						y = event.clientY - f, // 纵坐标
+						c = randomColor(), // 随机颜色
+						a = 1, // 透明度
+						s = 1.2; // 放大缩小
+
+					var timer = setInterval(function () { //添加定时器
+						if (a <= 0) {
+							document.body.removeChild(heart);
+							clearInterval(timer);
+						} else {
+							heart.style.cssText = "font-size:16px;cursor: default;position: fixed;color:" +
+								c + ";left:" + x + "px;top:" + y + "px;opacity:" + a + ";transform:scale(" +
+								s + ");";
+
+							y--;
+							a -= 0.016;
+							s += 0.002;
+						}
+					}, 15)
+
+				}
+				// 随机颜色
+				function randomColor() {
+
+					return "rgb(" + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + "," + (~~(Math
+						.random() * 255)) + ")";
+
+				}
+			}()));
+	</script>
+</body>
+
+</html>

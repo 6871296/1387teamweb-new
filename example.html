@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+	<meta charset="UTF-8">
+	<title>1387网（新版）</title>
+	<link rel="stylesheet" href="https://1387-cdn.pythonanywhere.com/style.css">
+	<script src="https://1387-cdn.pythonanywhere.com/main.js"></script>
+</head>
+
+<body>
+	<header>
+		<section id="nav"><!--导航栏-->
+			<a href="/" class="navbox">
+				<img style="border-radius:50%" src="https://1387-cdn.pythonanywhere.com/favicon.ico">
+				<strong class="navitem">首页</strong>
+			</a>
+			<a href="/projects" class="navbox">
+				<span class="navitem">作品</span>
+			</a>
+			<a href="/users" class="navbox">
+				<span class="navitem">用户</span>
+			</a>
+			<a href="/about" class="navbox">
+				<span class="navitem">关于1387</span>
+			</a>
+			<a href="/joinus" class="navbox">
+				<span class="navitem">加入我们</span>
+			</a>
+		</section>
+		<section id="user-settings">
+			<a href="/notifications" class="navbox"><img
+					id="user-notifications"></a><!--去往通知中心 这个需要一点点后端，可以用PythonAnywhere-->
+			<a href="/user" style="border-radius:50%" class="navbox"><img class="user-ico"
+					style="border-radius:50%"></a><!--用户头像 去往用户中心-->
+		</section>
+		<section id="user-menu" style="display:none">
+			<strong id="username"></strong>
+			<button id="user-goto-home"><img id="user-goto-home-icon"
+					src="https://1387-cdn.pythonanywhere.com/user-social-links/user-no-home.ico"></button><!--用户自己的个人主页-->
+			<button id="user-goto-luogu"><img id="user-goto-luogu-icon"
+					src="https://1387-cdn.pythonanywhere.com/user-social-links/user-no-luogu.ico"></button>
+			<button id="user-goto-40code"><img id="user-goto-40code-icon"
+					src="https://1387-cdn.pythonanywhere.com/user-social-links/user-no-40code.ico"></button>
+			<button id="user-goto-github"><img id="user-goto-github-icon"
+					src="https://1387-cdn.pythonanywhere.com/user-social-links/user-no-github.ico"></button>
+
+			<a href="/login" class="btnbox">
+				<span class="user-menu-" </a>
+					<a href="/user/projects" class="user-menu-box">
+						<span class="user-menu-item">我的作品</span>
+					</a>
+					<a href="/user/settings" class="user-menu-box">
+						<span class="user-menu-item">个人设置</span>
+					</a><!--你们还能想到什么吗？-->
+		</section>
+	</header>
+	<main>
+		<h1>这里是 1387网</h1>
+		<!--主内容-->
+
+	</main>
+	<footer>
+		<section class="footer-section">
+			<h3>友情链接</h3>
+			<a href="https://www.40code.com/#" class="yolink"><img src="https://www.40code.com/favicon.ico" width="32px"
+					height="32px">40code</a>
+			<a href="https://www.luogu.com.cn" class="yolink"><img src="https://luogu.com.cn/favicon.ico" width="32px"
+					height="32px">洛谷</a>
+			<a href="https://github/com" class="yolink"><img src="https://github.githubassets.com/favicons/favicon.svg"
+					width="32px" height="32px">GitHub</a>
+			<!--在此添加友链-->
+			<a href="/add-yolink" class="yolink">想要添加友链？点我</a>
+		</section>
+		<section class="footer-section">
+			<h3>1387相关站点</h3>
+			<a href="https://1387team.github.io/" class="yolink">1387旧版主站</a>
+			<a href="https://name317.github.io/1387teamweb" class="yolink">1387旧版站（室长镜像站）</a>
+			<a href="https://6871296.github.io/1387teamweb" class="yolink">1387旧版站（6871296镜像站）</a>
+			<a href="https://yxy317coder.github.io/1387teamweb" class="yolink">1387旧版站（室长小号镜像站）</a>
+			<a href="https://1387tw.wuaze.com" class="yolink">1387的废弃网址</a>
+			<a href="https://1387.com" class="yolink">1387的废弃网址（2）</a>
+			<a href="https://40code.com/#page=studio&id=535" class="yolink">1387 40code队</a>
+			<a href="https://www.luogu.com.cn/team/74385" class="yolink">1387 洛谷1队</a>
+			<a href="https://www.luogu.com.cn/team/76357" class="yolink">1387 洛谷2队</a>
+			<a href="https://www.ccw.site/topic/1387%E7%A4%BECCW%E5%88%86%E7%A4%BE" class="yolink">1387 CCW队</a>
+		</section>
+		<section class="footer-section">
+			<a href="#top" class="yolink">返回顶部</a>
+			<strong>©2024-<span id="year"></span> <img
+					src="https://1387-cdn.pythonanywhere.com/favicon.ico">1387Team™️</strong>
+		</section>
+	</footer>
+</body>
+
+</html>

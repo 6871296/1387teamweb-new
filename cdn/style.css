@@ -1,0 +1,55 @@
+header{
+	background-color:cyan;
+	border-radius: 10px;
+	padding:5px;
+}
+#nav{
+	align-self: flex-start;
+	margin:2px;
+}
+.navbox{
+	background-color:#0000;
+	border-radius:3px;
+	padding:1px;
+	margin:3px;
+}
+.navbox:hover{
+	background-color:#0004;
+}
+.navitem{
+	text-decoration: none;
+	color:black;
+}
+#user-settings{
+	align-self: flex-end;
+	margin:2px;
+}
+#user-menu{
+	border-radius: 5px;
+	background-color: white;
+	display: none;
+	x:unset;
+	y:unset;
+}
+main{
+	margin:1cm;
+	background-color:#0ff1;
+	border-radius:1cm;
+}
+h1{
+	color:cyan;
+	text-align: center;
+}
+footer{
+	background-color:black;
+	border-radius:1cm;
+}
+.footer-section{
+	margin:1px;
+	text-align: left;
+	color:gray;
+}
+.yolink{
+	text-decoration-color: gray;
+	color:gray;
+}
