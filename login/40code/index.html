@@ -7,21 +7,21 @@
 	<link rel="stylesheet" href="https://1387-cdn.pythonanywhere.com/style.css">
 	<script src="https://1387-cdn.pythonanywhere.com/main.js"></script>
 	<script>
-		function _40code_login(){
-			let xhr=new XMLHttpRequest();
-			xhr.open('POST','https://6871296.pythonanywhere.com/api/40code-login-create')
+		function _40code_login() {
+			let xhr = new XMLHttpRequest();
+			xhr.open('POST', 'https://6871296.pythonanywhere.com/api/40code-login-create')
 			xhr.send({
-				'redirecting':site+"/login/40code/return"
+				'redirecting': site + "/login/40code/return"
 			});
-			if(xhr.status===200){
-				const _40codeLoginId=JSON.parse(xhr.responseText)['loginId']
-			}else{
+			if (xhr.status === 200) {
+				const _40codeLoginId = JSON.parse(xhr.responseText)['loginId']
+			} else {
 				alert("登录失败，请重试！");
 				return
 			}
-			window.localStorage.setItem('40codeLoginId',_40codeLoginId);
+			window.localStorage.setItem('40codeLoginId', _40codeLoginId);
 			navigator.clipboard.writeText(_40codeLoginId);
-			window.location.href='https://www.40code.com/#page=work&id=16049'
+			window.location.href = 'https://www.40code.com/#page=work&id=16049'
 		}
 	</script>
 </head>
@@ -89,7 +89,7 @@
 					height="32px">40code</a>
 			<a href="https://www.luogu.com.cn" class="yolink"><img src="https://luogu.com.cn/favicon.ico" width="32px"
 					height="32px">洛谷</a>
-			<a href="https://github/com" class="yolink"><img src="https://github.githubassets.com/favicons/favicon.svg"
+			<a href="https://github.com" class="yolink"><img src="https://github.githubassets.com/favicons/favicon.svg"
 					width="32px" height="32px">GitHub</a>
 			<!--在此添加友链-->
 			<a href="/add-yolink" class="yolink">想要添加友链？点我</a>

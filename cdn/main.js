@@ -37,3 +37,9 @@ if(currentUser.github!==''){
 	document.getElementById('user-goto-github').href='https://github.com/'+currentUser.github
 	document.getElementById('user-goto-gihub-icon').src=cdnSite+'/user-social-links/user-has-github.ico'
 }
+
+const userIcoList=document.querySelector('.user-ico')
+for(let i=0;i<userIcoList.length;i++)
+	userIcoList[i].src=currentUser.favicon
+
+const URLParams=new URLSearchParams(window.location.search)
