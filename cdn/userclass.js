@@ -9,7 +9,11 @@ class User{
 		xhr.send({
 			'userId': userId,
 			'name':this.name,
-			'favicon':this.favicon
+			'favicon':this.favicon,
+			'home':this.home,
+			'luogu':this.luogu,
+			'40code':this._40code,
+			'github':this.github
 		})
 		if (xhr.status === 200) {
 		} else console.error(`Failed to set user info of ${userId}!`)

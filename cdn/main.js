@@ -20,6 +20,8 @@ else{
 
 document.getElementById('year').textContent=new Date().getFullYear()
 
+document.getElementById('user-notifications').src = "https://1387-cdn.pythonanywhere.com/internalApi/GetNotifiIco?userId="+currentUser.userId;
+
 document.getElementById('username').textContent=currentUser.name
 if(currentUser.home!==''){
 	document.getElementById('user-goto-home').href=currentUser.home

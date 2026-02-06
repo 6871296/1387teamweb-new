@@ -12,13 +12,23 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
 	<script>
 		window.localStorage.setItem('loginId', null)
+
 		function login() {
 			const loginBtn = document.getElementById('loginbtn')
 			loginBtn.textContent = '登录中……'
 			const pwd = CryptoJS.SHA256(document.getElementById('user-password'))
 			const uid = document.getElementById('user-uid')
 			xhr = new XMLHttpRequest();
-			xhr.open('POST',)
+			xhr.open('POST',cdnSite+'/internalApi/login')
+			xhr.send({
+				'uid':uid,
+				'pwd':pwd
+			})
+			if(xhr.status===200){
+
+			}else{
+				alert('')
+			}
 		}
 	</script>
 </head>
